@@ -33,12 +33,6 @@
     <style>
         body { font-family: 'Cairo', sans-serif; background-color: #F2F3F7; }
         .gradient-banner { background: linear-gradient(90deg, #FF6A00 0%, #FF4747 100%); }
-        .pulse-btn { animation: pulse 2s infinite; }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.03); }
-            100% { transform: scale(1); }
-        }
     </style>
 </head>
 <body class="text-gray-800 antialiased pb-20">
@@ -46,6 +40,17 @@
     <!-- Top Announcement Bar -->
     <div class="gradient-banner text-white text-xs md:text-sm py-2 px-4 text-center font-bold shadow-sm">
         ⚡ مرحباً بكم في فضاء ياسين (Agdz) - عروض خاصة على الهواتف، الإكسسوارات، والخدمات السريعة! 🚀
+    </div>
+
+    <!-- شريط متحرك للإعلان عن مباراة التعليم -->
+    <div class="bg-amber-400 text-gray-900 py-2.5 px-4 font-bold text-xs md:text-sm overflow-hidden whitespace-nowrap shadow-inner flex items-center">
+        <div class="bg-red-600 text-white px-3 py-1 rounded-md text-xs ml-3 animate-pulse flex items-center gap-1 shrink-0">
+            <i class="fa-solid fa-bullhorn"></i>
+            <span>عاجل:</span>
+        </div>
+        <marquee behavior="scroll" direction="right" scrollamount="5" class="flex-1">
+            📢 تنبيه هام: التسجيل في مباراة التعليم مفتوح الآن! يمكنك إعداد الملف، طبع الوثائق والتسجيل عبر الإنترنت مباشرة لدى فضاء ياسين بأقدز. 🎓
+        </marquee>
     </div>
 
     <!-- Header / Navbar -->
@@ -120,7 +125,7 @@
             <div class="space-y-3 max-w-xl text-center md:text-right">
                 <span class="bg-white/20 text-white text-xs px-3 py-1 rounded-full font-bold inline-block">خدمات متكاملة وسريعة</span>
                 <h1 class="text-2xl md:text-4xl font-extrabold leading-tight">Espace Yassine - كل ما تحتاجه في مكان واحد!</h1>
-                <p class="text-sm md:text-base text-white/90">إصلاح الهواتف، طباعة الوثائق، خدمات الإنترنت، أحدث الأجهزة والإكسسوارات بأسعار مناسبة في أقدز.</p>
+                <p class="text-sm md:text-base text-white/90">إصلاح الهواتف، طباعة الوثائق، خدمات التسجيل في المباريات، أحدث الأجهزة والإكسسوارات بأسعار مناسبة في أقدز.</p>
                 <div class="pt-2 flex flex-wrap gap-3 justify-center md:justify-start">
                     <a href="https://wa.me/212704935738" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-5 py-2.5 rounded-xl shadow transition flex items-center gap-2">
                         <i class="fa-brands fa-whatsapp text-lg"></i>
